@@ -3,7 +3,7 @@ const fs = require("fs");
 const path = require("path");
 const { noteobjects } = require("../../db/db");
 
-function createNewNote(body, noteobjects) {
+function addNewNoteObject(body, noteobjects) {
     const newnoteobject = body;
     noteobjects.push(newnoteobject);
     fs.writeFileSync(
@@ -20,7 +20,7 @@ router.get('/notes', (req, res) => {
 
 router.post('/notes', (req, res) => {
     req.body.id = noteobjects.length.toString();
-    const note = createNewNote(req.body, noteobjects);
+    const note = addNewNoteObject(req.body, noteobjects);
     res.json(note);
 });
 

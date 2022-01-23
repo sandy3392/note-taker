@@ -2,15 +2,18 @@
   "noteobjects": [
     {
       "title": "Test Title",
-      "text": "Test text"
+      "text": "Test text",
+      "id": "0"
     },
     {
       "title": "Test Title 2",
-      "text": "Test text 2"
+      "text": "Test text 2",
+      "id": "1"
     },
     {
       "title": "test 3",
-      "text": "test tes "
+      "text": "test tes ",
+      "id": "2"
     },
     {
       "title": "sample test 4",
